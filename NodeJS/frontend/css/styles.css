@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #272727;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff630e;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  background-color: #ff630e;
+  color: #1f1f1f;
+}
+
+#cart-icon {
+  position: relative;
+}
+
+#cart-icon img {
+  height: 7vh;
+  width: 7vh;
+}
+
+#cart-icon img:hover {
+  cursor: pointer;
+}
+
+#cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff630e;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart-count:hover {
+  background-color: #1f1f1f;
+  color: #ff630e;
+}
+
+
+#panier-liste {
+  position: absolute;
+  right: 0;
+  margin-top: 250px;
+  width: 250px;
+  background: linear-gradient(#ff5a02, #ff922c);
+  backdrop-filter: blur(5px);
+  border: #000000 solid 2px;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+
+#panier-liste.visible {
+  display: flex; 
+}
+
+.delete-all-items {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+
+.delete-all-items:hover {
+  cursor: pointer;
+  border: #000000 solid 2px;
+  border-radius: 50%;
+}
+
+.delete-item {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15px;
+  width: 15px;
+}
+
+.delete-item:hover {
+  cursor: pointer;
+  border: #880202 solid 1px;
+  border-radius: 50%;
+}
+
+
+#motorcycles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.motorcycle-card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.motorcycle-card:hover {
+  box-shadow: 0 0 5px #aaa;
+}
+ 
+.motorcycle-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.motorcycle-card .title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.motorcycle-card .price {
+  margin-top: 5px;
+}
+
+.motorcycle-card .original-price {
+  text-decoration: line-through;
+  color: red;
+}
+
+.motorcycle-card .add-to-cart {
+  display: block;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.motorcycle-card .view-details {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
